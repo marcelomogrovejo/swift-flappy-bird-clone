@@ -72,7 +72,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if gameOver == false {
             
-            // TODO: check why score is sticked somethimes
             if contact.bodyA.categoryBitMask == ColliderType.Gap.rawValue || contact.bodyB.categoryBitMask == ColliderType.Gap.rawValue {
                 print("Add one to score")
             
@@ -224,8 +223,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         pipe2.physicsBody?.collisionBitMask = ColliderType.Object.rawValue
         
         // Create a gap between pipes to get the score
+        
+        // Replace SKNode() gap for SKSpriteNode() gap for testing purposes
+//        let gapTexture = SKTexture(imageNamed: "gap.png")
+//        let gap = SKSpriteNode(texture: gapTexture)
+        
         let gap = SKNode()
-        gap.position = CGPoint(x: self.frame.midX, y: self.frame.midY + pipeOffset)
+        gap.position = CGPoint(x: self.frame.midX + self.frame.width, y: self.frame.midY + pipeOffset)
         gap.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: pipe1Texture.size().width, height: gapHeight))
         gap.physicsBody?.isDynamic = false
         gap.run(moveAndRemovePipes)

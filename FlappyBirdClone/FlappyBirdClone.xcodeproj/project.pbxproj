@@ -20,6 +20,8 @@
 		9CA546031EDFE5F600F1E32E /* flappy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CA545FE1EDFE5F600F1E32E /* flappy2.png */; };
 		9CA546041EDFE5F600F1E32E /* pipe1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CA545FF1EDFE5F600F1E32E /* pipe1.png */; };
 		9CA546051EDFE5F600F1E32E /* pipe2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CA546001EDFE5F600F1E32E /* pipe2.png */; };
+		9CB30DF01EE20B5600EA1857 /* gap.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CB30DEF1EE20B5600EA1857 /* gap.png */; };
+		9CB30DF21EE2109F00EA1857 /* flappy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CB30DF11EE2109F00EA1857 /* flappy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		9CA545FE1EDFE5F600F1E32E /* flappy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappy2.png; sourceTree = "<group>"; };
 		9CA545FF1EDFE5F600F1E32E /* pipe1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pipe1.png; sourceTree = "<group>"; };
 		9CA546001EDFE5F600F1E32E /* pipe2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pipe2.png; sourceTree = "<group>"; };
+		9CB30DEF1EE20B5600EA1857 /* gap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gap.png; sourceTree = "<group>"; };
+		9CB30DF11EE2109F00EA1857 /* flappy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappy.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 		9CA545E31EDFE41500F1E32E /* FlappyBirdClone */ = {
 			isa = PBXGroup;
 			children = (
+				9CB30DF11EE2109F00EA1857 /* flappy.png */,
+				9CB30DEF1EE20B5600EA1857 /* gap.png */,
 				9CA545FC1EDFE5F600F1E32E /* bg.png */,
 				9CA545FD1EDFE5F600F1E32E /* flappy1.png */,
 				9CA545FE1EDFE5F600F1E32E /* flappy2.png */,
@@ -148,10 +154,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB30DF01EE20B5600EA1857 /* gap.png in Resources */,
 				9CA545F01EDFE41500F1E32E /* Main.storyboard in Resources */,
 				9CA545E71EDFE41500F1E32E /* GameScene.sks in Resources */,
 				9CA546011EDFE5F600F1E32E /* bg.png in Resources */,
 				9CA545F21EDFE41500F1E32E /* Assets.xcassets in Resources */,
+				9CB30DF21EE2109F00EA1857 /* flappy.png in Resources */,
 				9CA546051EDFE5F600F1E32E /* pipe2.png in Resources */,
 				9CA546031EDFE5F600F1E32E /* flappy2.png in Resources */,
 				9CA546041EDFE5F600F1E32E /* pipe1.png in Resources */,
@@ -293,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = UZ8Z6MM7C2;
 				INFOPLIST_FILE = FlappyBirdClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -306,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = UZ8Z6MM7C2;
 				INFOPLIST_FILE = FlappyBirdClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -334,6 +344,7 @@
 				9CA545FB1EDFE41500F1E32E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
